@@ -11,7 +11,7 @@ RSpec.describe "Exchanges", type: :request do
   
   describe 'GET #convert' do
     before do
-      @amount = rand(0..9999)
+      @amount = rand(1..999)
     end
     
     it 'returns http success' do
