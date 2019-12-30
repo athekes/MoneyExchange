@@ -1,18 +1,18 @@
-require 'rails_helper'
+# require 'rails_helper'
 
-RSpec.describe "Exchange Currency Process", :type => :system, js: true do
-  it "show exchange value" do
+# RSpec.describe "Exchange Currency Process", :type => :system, js: true do
+#   it "show exchange value" do
     
-    visit '/'
+#     visit '/'
 
-    within("#exchange_form") do
-      select('EUR', from: 'source_currency')
-      select('BRL', from: 'target_currency')
-      fill_in 'amount', with: '10'
-    end
+#     within("#exchange_form") do
+#       select('EUR', from: 'source_currency')
+#       select('BRL', from: 'target_currency')
+#       fill_in 'amount', with: '10'
+#     end
 
-    click_button 'CONVERTER'
+#     click_button 'CONVERTER'
 
-    expect(page).to have_content("value")  
-  end
-end
+#     expect(page).to have_content("value")  
+#   end
+# end
